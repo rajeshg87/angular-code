@@ -1,0 +1,11 @@
+{{message}}
+
+<app-child (childEvent)="message=$event" [parentData]="name"></app-child>
+
+<ag-grid-angular 
+    style="width: 1000px; height: 500px;" 
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
